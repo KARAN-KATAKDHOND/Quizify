@@ -10,15 +10,15 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/images/quiz-logo.png', width: 300,
+          Image.asset('assets/images/quiz2.png', width: 350,
           color:const Color.fromARGB(150,255,255,255),
           ),
           SizedBox(height: 50),
           Text(
-            'Learn Flutter the fun way!',
-            style: GoogleFonts.dancingScript(
+            'Questions That Spark Curiosity!',
+            style: GoogleFonts.lato(
               color: Colors.blueAccent,
-              fontSize:40,
+              fontSize:26,
               fontWeight: FontWeight.bold,
             ),
           ),
