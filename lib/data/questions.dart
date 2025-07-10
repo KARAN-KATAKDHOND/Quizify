@@ -1,6 +1,7 @@
 import 'package:quiz_app/models/quiz_questions.dart';
 
-const questions = [
+const questions = [//list of objects called QuizQuestions , 
+//derived from QuizQuestion class of file model/quiz_question.dart
 QuizQuestions(
   'What are the main building blocks of Flutter UI?',
 [

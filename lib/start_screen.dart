@@ -25,7 +25,8 @@ class StartScreen extends StatelessWidget {
           SizedBox(height: 40),
           OutlinedButton.icon(
             onPressed: () {
-              startQuiz();
+              startQuiz();//switch screen function in quiz.dart
+              
             },
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
