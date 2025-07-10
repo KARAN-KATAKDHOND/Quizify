@@ -27,6 +27,12 @@ class _QuizState extends State<Quiz> {
       //activeScreen = const QuestionsScreen();
     });
   }
+  void backtoHomepage(){
+    setState(() {
+      activeScreen='start-screen';
+      selectedAnswers=[];
+    });
+  }
 //  to make sure chooseAnswer is invoked whenever a answer is picked in quiz widget
 //so pass it to QuestionsScreen Widget
   void chooseAnswer(String answer) {
@@ -34,7 +40,7 @@ class _QuizState extends State<Quiz> {
     
     if(selectedAnswers.length==questions.length){
       setState(() {
-        selectedAnswers = [];
+  //       selectedAnswers = [];//no need when result is showed
         activeScreen = 'result-screen';
       });
     }
@@ -51,7 +57,7 @@ class _QuizState extends State<Quiz> {
       screenWidget = QuestionsScreen(onSelectAnswer: chooseAnswer);
     }
     if(activeScreen=='result-screen'){
-      screenWidget = ResultScreen();
+      screenWidget = ResultScreen(chosenAnswers: selectedAnswers,backtoHomepage: backtoHomepage,);
     }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
