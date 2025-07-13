@@ -1,16 +1,37 @@
-# quiz_app
+# Quizify 🎯  
+An interactive quiz app built with Flutter that allows users to test their knowledge across various topics in a visually engaging format. Designed with Firebase integration, Quizify offers user authentication, real-time data handling, and scalable quiz management.
 
-A new Flutter project.
+---
 
-## Getting Started
+## 📸 Screenshots  
+<!-- Add screenshots of the login screen, quiz interface, results page, etc. -->
 
-This project is a starting point for a Flutter application.
+| StartScreen | Quiz Interface | Results |
+|----------------------|----------------|--------------------|
+| ![login](screenshots/login.png) | ![quiz](screenshots/quiz.png) | ![results](screenshots/results.png) |
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ⚙️ Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 📊 **Real-time Database** – Store and retrieve quiz data dynamically
+- 🧠 **Quiz Management** – Multiple-choice questions with correct answer validation
+- 🎨 **Responsive UI** – Consistent user experience across devices
+- 📈 **Score Tracking** – Calculate and display quiz scores instantly
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Flutter SDK
+- Dart 3.x
+
+### Installation
+
+```bash
+git clone https://github.com/KARAN-KATAKDHOND/Quizify.git
+cd Quizify
+flutter pub get
+flutter run
+```
