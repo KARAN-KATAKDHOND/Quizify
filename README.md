@@ -35,3 +35,5 @@ cd Quizify
 flutter pub get
 flutter run
 ```
+
+Author and Developer: Karan N. Katakdhond
